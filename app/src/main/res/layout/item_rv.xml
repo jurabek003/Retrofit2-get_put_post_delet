@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="#AA00FF"
+        app:strokeWidth="1dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="15dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:maxWidth="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/item_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:maxWidth="150dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/item_bajarildi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:maxWidth="200dp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/item_batafsil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textAllCaps="false"
+                    android:maxWidth="200dp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/item_oxirgi_M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:maxWidth="200dp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/item_sarlovha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:maxWidth="200dp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:text="@string/app_name"
+                    android:textSize="18sp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/item_zarurlik"
+                    android:layout_width="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:maxWidth="200dp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:padding="3dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_more"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?actionBarItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_more"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
